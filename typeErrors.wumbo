@@ -1,0 +1,154 @@
+bool bbb;
+struct S { int a; };
+struct S t;
+struct P {
+    int x;
+    int y;
+    bool Point;
+};
+
+void f(int p1, bool p2) {
+}
+
+void main() {
+    int aaa;
+
+    // some errors involving illegal operations on functions
+    aaa = f + f;
+    bbb = f == 3;
+    bbb = f > main;
+    bbb = f == f;
+
+    // some errors involving bad function calls
+    aaa();
+    f();
+    f(5);
+    f(aaa, aaa);
+    f(t, t.a);
+    S();
+
+    // some errors involving structs
+    t = 5;
+    t = t;
+    cin >> S;
+    t = true || 3;
+    bbb = S && t.a;
+
+    // error involving return
+    return 10;
+
+    // other type errors
+    aaa = aaa + (!false);
+    aaa = aaa + "foo";
+    bbb = aaa;
+
+    // don't give too many or too few error messages here
+    bbb = (aaa + true) && (bbb < true);
+}
+
+int func(int x, int y, bool b){
+    struct P point;
+    point.x = b;
+    point.Point = x == y;
+    if(x){
+        return y;
+    }
+    else{
+        return x && y;
+    }
+    while(point){
+        cout << point;
+    }
+
+    b = x == b || y != b;
+    x = b;
+    b = y;
+    return false;
+}
+
+void i(bool b){
+    int x;
+    int y;
+    struct P p;
+    x = 3;
+    y = 5;
+    while(b && (x > 2)){
+        x--;
+    }
+
+    repeat(y > 2){
+        b = false;
+        y--;
+    }
+
+    cout << x;
+    cout << b == true;
+    cin >> x;
+    cin >> b;
+
+    cout << P + 1;          
+    x = (true + 3) * 4;         
+    b = true && (false || 3) ;  
+    f("a" * 4);            
+    y = 1 + p();
+    p.Point = (true + 3) == x;
+
+    cout << true + "hello";
+    cout << (1 + f(true));
+    x = 1 + f(1, 2);
+    y = func(x, b);
+    return 3+true;
+}
+
+int l(){
+    bool b;
+    b = true;
+    repeat(b){ }
+    return;
+}
+bool func3(){
+    return 5;
+}
+
+void function(){
+    struct P p;
+    struct P p2;
+    bool c;
+    bool b;
+    int a;
+    cout << f;
+    cout << p;
+    cout << P;
+    cout << i;
+
+
+    cin >> f;
+    cin >> p;
+    cin >> P;
+    cin >> i;
+
+    p();
+    function(p);
+    i(p);
+    c++;
+    c--;
+    p++;
+    p--;
+    a = c + p;
+    a = c - p;
+    a = c*c;
+    a = p/p;
+    b = a < p;
+    b = p >= a;
+    b = p > p;
+    b = a <= a;
+    b = a == c;
+    b = p == a;
+    c = function() == main();
+    c = function = main;
+    c = P == S;
+    c = p == p2;
+    func3 = main;
+    P = S;
+    p = p2;
+}

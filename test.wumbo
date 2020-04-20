@@ -1,0 +1,70 @@
+struct Point {
+    int x;
+    int y;
+    bool Point;
+};
+
+bool newFunc(){
+    bool a;
+    a = true;
+    return a;
+}
+
+int h(){
+    int x;
+    int y;
+    bool a;
+    bool b;
+    x = 3;
+    y = x;
+    a = x == y;
+    b = false;
+    if(a || (b)){
+        x = 1;
+        return y;
+    }
+    else{
+        x = 4;
+        return x;
+    }
+    return y;
+}
+
+void i(bool b){
+    int x;
+    int y;
+    x = 3;
+    y = 5;
+    while(b && (x > 2)){
+        x--;
+    }
+
+    repeat(y){
+        b = false;
+        y--;
+    }
+
+    cout << x;
+    cout << b == true;
+    cin >> x;
+    cin >> b;
+}
+int f(int x, bool b) { }
+void g() {
+    int a;
+    bool b;
+    bool c;
+    struct Point p;
+    p.x = a;
+    b = a == 3;
+    c = 4 != 4;
+    b = a < p.x;
+    b = a > p.x;
+    b = a <= p.x;
+    b = 3 >= 3;
+    f(a + p.y*2, b);
+    g();
+    a = h();
+    i(b && c);
+    return;
+}

@@ -1,18 +1,3 @@
-struct Point{
-    int x;
-    int y;
-    bool Point;
-};
-
-bool newFunc() {
-    bool a;
-    a(bool) = true;
-    return a(bool);
-}
-
-int h() {
-    int x;
-    int y;
     bool a;
     bool b;
     x(int) = 3;
@@ -69,4 +54,3 @@ void g() {
     i(bool->void)((b(bool) && c(bool)));
     return;
 }
-
